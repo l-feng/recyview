@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
          viewPager=findViewById(R.id.view_pager);
          bottomNavigationView=findViewById(R.id.navigation_view);
-
+         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
         viewPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(new HomeFragment());
         viewPagerAdapter.addFragment(new SecondFragment());
